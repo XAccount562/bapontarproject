@@ -1,0 +1,306 @@
+/*UTAMA*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+h2 {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+p#samar{
+    font-size: 0.5rem;
+    color: var(--maincolor3solid);
+}
+.textright{
+    text-align: right;
+}
+.isi_center {
+    margin: auto;
+    align-items: center;
+    width: 70rem;
+}
+img {
+    border-radius: 1.5rem;
+}
+
+/*MAIN COLOR*/
+:root {
+    --maincolor1solid: #0081d6;
+    --maincolor1gradient: linear-gradient(111.53deg, #00A3FF 0%, #2476A5 100%);
+    --maincolor2solid: #e4e4e4;
+    --maincolor2gradient: linear-gradient(180deg, #FFFFFF 0%, #EFEFEF 100%);
+    /* --maincolor3solid: #363636; */
+    --maincolor3solid: #555555;
+    --maincolor3gradient: linear-gradient(180deg, #5E5E5E 0%, #252525 100%);
+    --maincolor4gradient: linear-gradient(180deg, #FDD33D 0%, #FFE27B 100%);
+    --maincolorWhite: #ffffff;
+    --maincolorBlack: #000000;
+    --colorsolidWhatsapp: #4AAB3C;
+
+}
+
+/*INTERACTIONS*/
+.button1 {
+    padding: 4px 20px;
+    background-color: var(--maincolorWhite);
+    border: 0;
+    border-radius: 5px;
+    color: var(--maincolor1solid);
+    cursor: pointer;
+    font-size: 0.9rem;
+    
+    transition: 0.5s;
+}
+.button1:hover {
+    background-color: var(--maincolor3solid);
+}
+.button1:focus {
+    background-color: var(--maincolorBlack);
+}
+
+.button_link1 {
+    text-decoration: none;
+    color: var(--maincolorWhite);
+
+    transition: 0.5s;
+}
+.button_link1:hover {
+    color: var(--maincolor3solid)
+}
+.button_link1:active{
+    color: var(--maincolorBlack);
+}
+
+/*NAVBAR*/
+.navbar_flex {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 1rem;
+    width: 70rem;
+
+    /* color: rgb(3, 118, 194); */
+    color: var(--maincolorWhite);
+    /* background-color: white; */
+    
+}
+.navbar_dasar {
+    background: var(--maincolor1gradient);
+    position: fixed;
+    width: 100%;
+    
+    z-index: 10;
+}
+.navbar_item1 {
+    margin-right: 45%;
+}
+.navbar_item2, .navbar_item3, .navbar_item4, .navbar_item5{
+    margin-right: 2rem;
+}
+.navbar_item5 {
+    margin-top: -0.1rem;
+}
+
+.navbar_Title{
+    font-weight: bold;
+}
+
+/*SECTIONS*/
+    /*Beranda*/
+    .section_beranda {
+        height: 35rem;
+    }
+
+    .beranda_FLEX {
+        padding-top: 10rem;
+        display: flex;
+        margin: auto;
+        justify-content:space-between;
+        align-items: center;
+        width: 60rem;
+    }
+
+    .beranda_FLEX h1,
+    .beranda_FLEX h2,
+    .beranda_FLEX p{
+        color: var(--maincolorWhite);
+    }
+    .images1 {
+        width: 30rem;
+    }
+
+    /*Layanan Kami*/
+    .section_layanankami {
+        padding-top: 5rem;
+        height: 30rem;
+    }
+    .layanankami_introtext1 {
+        padding-left: 5rem;
+        color: var(--maincolor3solid);
+    }
+
+    .layanankami_FLEX {
+        display: flex;
+        margin: auto;
+        justify-content:space-around;
+        align-items: center;
+        width: 62rem;
+    }
+
+    .layanankami_FLEX_itemS {
+        background: var(--maincolor4gradient);
+        border-radius: 20px;
+        width: 7rem;
+    }
+    .layanankami_FLEX_itemS img {
+        align-items: center;
+    }
+    .layanankami_FLEX_itemS p{
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+        color:var(--maincolor3solid);
+    }
+    .layanankami_img_FLEX{
+        width: 7rem;
+        border-radius: 20px;
+    }
+
+    /*Tentang Kami*/
+    .section_tentangkami {
+        height: 55rem;
+        padding-top: 5rem;
+    }
+
+    .tentangkami_FLEX1-horizontal {
+        display: flex;
+        margin: auto;
+        justify-content:space-between;
+        align-items: center;
+        width: 60rem;
+    }
+    .tentangkami_FLEX1-horizontal_item1 {
+        margin-right: 3rem;
+    }
+    .tentangkami_FLEX1-horizontal_item2 {
+        background: var(--maincolor2gradient);
+        padding: 1rem;
+        border-radius: 1.5rem;
+    }
+
+    .tentangkami_VisiMisi {
+        text-align: center;
+        width: 60rem;
+        padding-top: 2rem;
+        margin: auto;
+    }
+
+    /*Hubungi Kami*/
+    .section_hubungikami {
+        height: 40rem;
+        padding-top: 5rem;
+    }
+
+    .hubungikami_FLEX1-horizontal {
+        display: flex;
+        margin: auto;
+        justify-content:space-around;
+        align-items: center;
+        width: 60rem;
+    }
+
+    .section_hubungikami h1{
+        color: var(--maincolorWhite);
+    }
+    .section_hubungikami h2{
+        color: var(--maincolorWhite);
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .section_hubungikami p{
+        color: var(--maincolorWhite);
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .section_hubungikami iframe{
+        margin-top: 2rem;
+    }
+
+    .hubungikami_button_whatsapp{
+        color: var(--colorsolidWhatsapp);
+    }
+    .hubungikami_button_email{
+        margin-left: 1rem;
+    }
+
+    .section_hubungikami button {
+        margin-top: 1rem;
+    }
+    .section_hubungikami a {
+        text-decoration: none;
+    }
+    .section_hubungikami a img{
+        width: 1rem;
+    }
+
+    /*Footer*/
+    footer {
+        text-align: center;
+        height: 8rem;
+        padding-top: 0.5rem;
+        
+    }
+    footer p, footer h1 {
+        color: var(--maincolorWhite);
+        padding: 0;
+    }
+
+/*BACKGROUND*/
+.section_beranda_BG{
+    background: var(--maincolor1gradient);
+}
+.section_layanankami_BG{
+    background: var(--maincolor2gradient);
+}
+.section_tentangkami_BG{
+    background: var(--maincolor4gradient);
+}
+.section_hubungikami_BG{
+    background: var(--maincolor1gradient)
+}
+footer{
+    background: var(--maincolor3gradient)
+}
+
+/*roger development help*/
+/* .rogerdevhelp_color1 {
+    background-color: red;
+}
+.rogerdevhelp_color2 {
+    background-color: orange;
+}
+.rogerdevhelp_color3 {
+    background-color: green;
+}
+.rogerdevhelp_color4 {
+    background-color: blue;
+}
+.rogerdevhelp_color5 {
+    background-color: purple;
+}
+.rogerdevhelp_color6 {
+    background-color: fuchsia;
+} */

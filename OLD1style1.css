@@ -1,0 +1,146 @@
+/*UTAMA*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+h2 {
+    font-size: 0,7rem;
+    padding-bottom: 1rem;
+}
+p {
+    font-size: 0,5rem;
+    padding-bottom: 1rem;
+}
+p#samar{
+    font-size: 10px;
+    color: rgb(80, 80, 80);
+}
+.textright{
+    text-align: right;
+}
+.isi_center {
+    margin: auto;
+    align-items: center;
+    width: 70rem;
+}
+
+/*INTERACTIONS*/
+.button1 {
+    padding: 4px 20px;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(3, 118, 194);
+    cursor: pointer;
+    
+    transition: 0.5s;
+}
+.button1:hover {
+    background-color: #363636;
+}
+
+.button_link1 {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.5s;
+}
+.button_link1:hover {
+    color: #363636;
+}
+
+/*NAVBAR*/
+.navbar_flex {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 1rem;
+    width: 70rem;
+
+    /* color: rgb(3, 118, 194); */
+    color: white;
+    /* background-color: white; */
+    
+}
+.navbar_dasar {
+    background: linear-gradient(111.53deg, #00A3FF 0%, #2476A5 100%);
+    position: fixed;
+    width: 100%;
+    
+    z-index: 10;
+}
+.navbar_item1 {
+    margin-right: 45%;
+}
+.navbar_item2, .navbar_item3, .navbar_item4, .navbar_item5{
+    margin-right: 1rem;
+}
+
+/*SECTIONS*/
+.canvas1_dasar {
+    height: 35rem;
+    background: linear-gradient(111.53deg, #00A3FF 0%, #2476A5 100%);
+
+    z-index: 0;
+}
+
+    /*BERANDA*/
+    .flex_beranda {
+        padding-top: 10rem;
+        display: flex;
+        margin: auto;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .flex_beranda_item1 {
+        z-index: 2;
+    }
+
+    .flex_beranda h1,
+    .flex_beranda h2,
+    .flex_beranda p{
+        color: white;
+    }
+    .images1 {
+        width: 30rem;
+    }
+
+.group1{
+    
+    background-color: red;
+}
+
+/*GRAPHICS*/
+.graphic_circle1 {
+    height: 30rem;
+    width: 30rem;
+    background: linear-gradient(180deg, #FDD33D 0%, #FFE27B 100%);
+    border-radius: 100%;
+
+    position: relative;
+    top: -12rem;
+    left: -9rem;
+    /* position: absolute;
+    width: 727px;
+    height: 737px;
+    left: -111px;
+    top: 277px; */
+
+    z-index: 1;
+
+}
+
+/*roger's notes
+
+    z-index
+        0 = .canvas1_dasar
+        1 = .graphic_circle1
+        2 = .flex_beranda_item1
+        3 = .group1
+
+*/
