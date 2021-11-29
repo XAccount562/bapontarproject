@@ -431,6 +431,11 @@ footer{
             display: none;
         }
 
+        /*Layanan Kami*/
+        .layanankami_introtext1 {
+            padding-left: 0;
+        }
+
         /*Tentang Kami*/
         .tentangkami_FLEX1-horizontal {
             display: block;
