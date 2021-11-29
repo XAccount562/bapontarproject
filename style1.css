@@ -119,8 +119,10 @@ img {
     
     z-index: 10;
 }
+
 .navbar_item1 {
     margin-right: 33%;
+    font-size: 1.2rem;
 }
 .navbar_item2, .navbar_item3, .navbar_item4, .navbar_item5{
     margin-right: 2rem;
@@ -129,7 +131,7 @@ img {
     margin-top: -0.1rem;
 }
 
-.navbar_Title{
+.navbar_Title {
     font-weight: bold;
 }
 
@@ -310,6 +312,11 @@ img {
         margin-top: 1rem;
     }
 
+    footer img {
+        width: 3rem;
+        display: inline;
+    }
+
 /*BACKGROUND*/
 .section_beranda_BG{
     background: var(--maincolor1gradient);
@@ -368,7 +375,7 @@ footer{
             white-space: nowrap;
             /* width: 100%; */
             border-radius: 1.5rem;
-            background-color: var(--maincolor3solid);
+            background: var(--maincolor1gradient);
         }
 
         .layanankami_FLEX {
