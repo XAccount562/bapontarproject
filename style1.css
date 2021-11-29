@@ -20,7 +20,7 @@ p {
     padding-bottom: 1rem;
 }
 p#samar{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: var(--maincolor3solid);
 }
 .textright{
@@ -29,7 +29,9 @@ p#samar{
 .isi_center {
     margin: auto;
     align-items: center;
-    width: 70rem;
+    width: 60rem;
+    /* width: 1rem; */
+    /* width: 90%; */
 }
 img {
     border-radius: 1.5rem;
@@ -77,9 +79,22 @@ img {
     transition: 0.5s;
 }
 .button_link1:hover {
-    color: var(--maincolor3solid)
+    color: var(--maincolor3solid);
 }
 .button_link1:active{
+    color: var(--maincolorBlack);
+}
+
+.button_link2 {
+    text-decoration: none;
+    color: var(--maincolorWhite);
+
+    transition: 0.5s;
+}
+.button_link2:hover {
+    color: var(--maincolor1solid);
+}
+.button_link2:active{
     color: var(--maincolorBlack);
 }
 
@@ -89,7 +104,8 @@ img {
     margin: auto;
     justify-content: center;
     padding: 1rem;
-    width: 70rem;
+    /* width: 70rem; */
+    width: 100%;
 
     /* color: rgb(3, 118, 194); */
     color: var(--maincolorWhite);
@@ -104,7 +120,7 @@ img {
     z-index: 10;
 }
 .navbar_item1 {
-    margin-right: 45%;
+    margin-right: 33%;
 }
 .navbar_item2, .navbar_item3, .navbar_item4, .navbar_item5{
     margin-right: 2rem;
@@ -119,17 +135,25 @@ img {
 
 /*SECTIONS*/
     /*Beranda*/
-    .section_beranda {
+    /* .section_beranda {
         height: 35rem;
-    }
+    } */
 
     .beranda_FLEX {
         padding-top: 10rem;
+        padding-bottom: 5rem;
         display: flex;
         margin: auto;
-        justify-content:space-between;
+        justify-content:space-around;
         align-items: center;
-        width: 60rem;
+        /* width: 60rem; */
+    }
+    .beranda_FLEX_item1 {
+        width: 50%;
+    }
+    .beranda_FLEX_item2 {
+        width: 50%;
+        text-align: right;
     }
 
     .beranda_FLEX h1,
@@ -138,16 +162,17 @@ img {
         color: var(--maincolorWhite);
     }
     .images1 {
-        width: 30rem;
+        width: 70%;
     }
 
     /*Layanan Kami*/
     .section_layanankami {
         padding-top: 5rem;
-        height: 30rem;
+        padding-bottom: 10rem;
+        /* height: 30rem; */
     }
     .layanankami_introtext1 {
-        padding-left: 5rem;
+        padding-left: 2rem;
         color: var(--maincolor3solid);
     }
 
@@ -156,13 +181,16 @@ img {
         margin: auto;
         justify-content:space-around;
         align-items: center;
-        width: 62rem;
+        /* width: 62rem; */
+        /* width: 100%; */
     }
 
     .layanankami_FLEX_itemS {
         background: var(--maincolor4gradient);
         border-radius: 20px;
         width: 7rem;
+        height: 9rem;
+        margin-top: 2rem;
     }
     .layanankami_FLEX_itemS img {
         align-items: center;
@@ -174,14 +202,16 @@ img {
         color:var(--maincolor3solid);
     }
     .layanankami_img_FLEX{
-        width: 7rem;
+        /* width: 7rem; */
+        width: 100%;
         border-radius: 20px;
     }
 
     /*Tentang Kami*/
     .section_tentangkami {
-        height: 55rem;
+        /* height: 55rem; */
         padding-top: 5rem;
+        color: var(--maincolor3solid);
     }
 
     .tentangkami_FLEX1-horizontal {
@@ -189,10 +219,14 @@ img {
         margin: auto;
         justify-content:space-between;
         align-items: center;
-        width: 60rem;
+        /* width: 60rem; */
     }
     .tentangkami_FLEX1-horizontal_item1 {
-        margin-right: 3rem;
+        /* margin-right: 5rem; */
+        margin-right: 10%;
+    }
+    .tentangkami_FLEX1-horizontal_item1 img{
+        width: 100%;
     }
     .tentangkami_FLEX1-horizontal_item2 {
         background: var(--maincolor2gradient);
@@ -202,15 +236,16 @@ img {
 
     .tentangkami_VisiMisi {
         text-align: center;
-        width: 60rem;
         padding-top: 2rem;
+        padding-bottom: 2rem;
         margin: auto;
     }
 
     /*Hubungi Kami*/
     .section_hubungikami {
-        height: 40rem;
+        /* height: 40rem; */
         padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .hubungikami_FLEX1-horizontal {
@@ -218,7 +253,7 @@ img {
         margin: auto;
         justify-content:space-around;
         align-items: center;
-        width: 60rem;
+        /* width: 60rem; */
     }
 
     .section_hubungikami h1{
@@ -237,6 +272,8 @@ img {
 
     .section_hubungikami iframe{
         margin-top: 2rem;
+        border-radius: 1.5rem;
+        width: 100%;
     }
 
     .hubungikami_button_whatsapp{
@@ -258,19 +295,25 @@ img {
 
     /*Footer*/
     footer {
-        text-align: center;
-        height: 8rem;
+        /* text-align: center; */
+        /* height: 10rem; */
         padding-top: 0.5rem;
+        padding-bottom: 2rem;
         
     }
-    footer p, footer h1 {
+    footer p, footer h2 {
         color: var(--maincolorWhite);
         padding: 0;
+    }
+
+    footer p#samar {
+        margin-top: 1rem;
     }
 
 /*BACKGROUND*/
 .section_beranda_BG{
     background: var(--maincolor1gradient);
+    width: 100%;
 }
 .section_layanankami_BG{
     background: var(--maincolor2gradient);
@@ -284,6 +327,133 @@ img {
 footer{
     background: var(--maincolor3gradient)
 }
+
+@media(max-width: 1199.98px) {
+
+    .isi_center {
+        margin: auto;
+        align-items: center;
+        /* width: 60rem; */
+        /* width: 1rem; */
+        width: 90%;
+        padding: 1rem;
+    }
+
+    /*NAVBAR*/
+    .navbar_item1{
+        margin-right: 0;
+        font-size: 2rem;
+    }
+    .navbar_item2,
+    .navbar_item3,
+    .navbar_item4,
+    .navbar_item5 {
+        display: none;
+    }
+
+    /*SECTIONS*/
+        /*Beranda*/
+        .images1 {
+            width: 90%;
+        }
+
+        /*Layanan Kami*/
+        .section_layanankami {
+            padding-top: 3rem;
+            padding-bottom: 7rem;
+            /* height: 30rem; */
+        }
+        .layanankami_horizontalmenu1{
+            overflow: auto;
+            white-space: nowrap;
+            /* width: 100%; */
+            border-radius: 1.5rem;
+            background-color: var(--maincolor3solid);
+        }
+
+        .layanankami_FLEX {
+            /* display: flex;
+            margin: auto; */
+            /* justify-content:space-around; */
+            /* align-items: center; */
+            width: 62rem;
+            padding-bottom: 1.5rem;
+            margin: 0;
+            /* width: 100%; */
+        }
+        
+    
+        .layanankami_FLEX_itemS {
+            background: var(--maincolor4gradient);
+            border-radius: 20px;
+            width: 7rem;
+            height: 9rem;
+            margin-top: 2rem;
+        }
+
+        /*Tentang Kami*/
+        .section_tentangkami {
+            /* height: 55rem; */
+            padding-top: 3rem;
+        }
+        
+        /*Hubungi Kami*/
+        .section_hubungikami {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+}
+
+@media (max-width: 767.98px) {
+
+
+    /*NAVBAR*/
+    .navbar_item1{
+        font-size: 1.5rem;
+    }
+
+    /*SECTIONS*/
+        /*Beranda*/
+        .beranda_FLEX {
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+            display: block;
+            margin: auto;
+            justify-content:space-around;
+            align-items: center;
+            /* width: 100%; */
+        }
+        .beranda_FLEX_item1 {
+            width: 100%;
+        }
+        .beranda_FLEX_item2 {
+            width: 50%;
+            display: none;
+        }
+
+        /*Tentang Kami*/
+        .tentangkami_FLEX1-horizontal {
+            display: block;
+            
+            justify-content:space-between;
+            align-items: center;
+            /* width: 60rem; */
+        }
+
+        /*Hubungi Kami*/
+        .hubungikami_FLEX1-horizontal {
+            display: block;
+            
+            justify-content:space-around;
+            align-items: center;
+            /* width: 60rem; */
+        }
+        .section_hubungikami h2{
+            font-size: 1rem;
+        }
+}
+
+
 
 /*roger development help*/
 /* .rogerdevhelp_color1 {
